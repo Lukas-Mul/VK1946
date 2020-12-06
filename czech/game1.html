@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Volební kalkulačka</title>
+    <link rel="stylesheet" href="2_intro_style.css" />
+  </head>
+  <body>
+   
+      <div id="explanation1-flex">
+        <p class="vysvetlivka1">
+        </p>
+      </div>
+      <div id="explanation2-flex">
+        <p class="vysvetlivka1">
+          K vysídlení třech milionů Němců došlo v letech 1945–1946. <br>K tomuto rozhodnutí vedlo kruté zacházení ze strany nacistů v období protektorátu <br>a těžký život za druhé světové války. Šlo o tzv. uplatnění kolektivní viny. 
+          Československo tak přišlo o významný počet obyvatel, mnohdy vysoce kvalifikovaných.
+        </p>
+      </div>
+    <div id="hideAll" class="container-intro">
+      <div id="game" class="justify-center flex-column hidden3">
+        <div class="question-container">
+        <div id="question" class="slide"></div>
+        <div id="progressBar">
+          <div id="progressBarFull"></div>
+          <div class="hiddenImages">
+            <img src="../img/csl.jpg" alt="">
+            <img src="../img/cssd.jpg" alt="">
+            <img src="../img/ksc.jpg" alt="">
+            <img src="../img/ns.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- pri posledni otazce to prida class last-question-container -->
+      <div id="last-answer" class="answer-container">
+        <div class="choice-container">
+          <p class="choice-text choice-text-ano" data-number="1">Ano</p>
+        </div>
+        <div class="choice-container choice-container-red">
+          <p class="choice-text choice-text-ne" data-number="2">Ne</p>
+        </div>
+        <div class="choice-container hidden">
+          <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container hidden">
+          <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+      </div>
+      </div>
+
+
+      <div id="endGameId" class="justify-center flex-column outcome hidden2 ">
+        <div class="partiesId">
+          <div class="youSupport">Ve volbách byste svým hlasem podpořili:</div>
+          <div class="howItEnded">Jak dopadly volby?</div>
+        </div>
+        <div class="parties-container backgroundImage">
+          <div class="parties-text current" data-number="1">Party 1</div>
+          <div class="parties-text" data-number="2">Party 2</div>
+          <div class="parties-text" data-number="3">Party 3</div>
+          <div class="parties-text" data-number="4">Party 4</div>
+        </div>
+        <div class="history-text-div">
+          <div class="history-text-text">
+          <p>V Československu se voleb zúčastnilo 7 099 411 voličů.</p> 
+          <br>
+          <p>Komunistická strana Československa sice utržila porážku na slovenském území, <br>v celorepublikovém měřítku ale slavila vítězství. Celkem získala 43,3 % hlasů.</p>
+          <br>
+          <p>Velkou roli hrálo přerozdělování půdy, pozitivní vnímání Sovětského svazu, a tedy <br>i očekávání nového, sociálně spravedlivějšího systému.</p>
+          <br>
+          <p>Na druhém místě skončili s 25,2 % hlasů Národní socialisté, kteří tvořili protipól komunistů, svým programem však pravděpodobně nedokázali oslovit venkov.</p>
+          <br>
+          <p>Ve vyšší počet voličů z venkova doufali lidovci, ale ti se museli spokojit s pouhými 16,3 % hlasů. To byl počátek vnitřních problémů ve straně.</p>             
+          <br>
+          <p>Sociální demokracie získala pouhých 15 % hlasů navzdory tomu, že měla velmi podobný program jako komunisté. </p>             
+          <br>
+          <p>Volby v roce 1946 byly posledními svobodnými demokratickými volbami na příštích čtyřicet let.</p>             
+          </div>
+        </div>
+        <div class="party-characteristics">
+          <div class="changingTextParties">
+            Tady bude charakteristika jednotlivych stran
+          </div>
+          </div>
+          <div class="lastResetButtonDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay" class="hidden11"></div>    
+    <div id="overlay2" class="hideOverlay2"></div>    
+
+    <div class="timeoutSign hideTimeoutSign">
+      <div class="timeoutSign-content">
+        <div class="timeoutSign-content-text">Budete pokračovat?</div>
+        <div class="timer">10</div>
+      </div>
+      <div class="continue"></div>
+      <div class="restartDiv"></div>
+    </div>
+
+    <script src="./game1.js"></script>
+    <!-- <script type="text/javascript">
+      resetButton.classList.add("hidden2");
+      </script> -->
+  </body>
+</html>

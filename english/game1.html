@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vote Calculator</title>
+    <link rel="stylesheet" href="2_intro_style.css" />
+  </head>
+  <body>
+   
+      <div id="explanation1-flex">
+        <p class="vysvetlivka1">
+        </p>
+      </div>
+      <div id="explanation2-flex">
+        <p class="vysvetlivka1">
+          The expulsion of three million Germans took place in the years 1945-46. This decision was made due to the cruel treatment of Czechs by the Nazis during the Protectorate and the hardships during the Second World War. The principle <br>of collective guilt was applied. 
+          Czechoslovakia thus lost <br>a significant number <br>of inhabitants, many of them highly qualified.
+        </p>
+      </div>
+    <div id="hideAll" class="container-intro">
+      <div id="game" class="justify-center flex-column hidden3">
+        <div class="question-container">
+        <div id="question" class="slide"></div>
+        <div id="progressBar">
+          <div id="progressBarFull"></div>
+          <div class="hiddenImages">
+            <img src="../img/csl.jpg" alt="">
+            <img src="../img/cssd.jpg" alt="">
+            <img src="../img/ksc.jpg" alt="">
+            <img src="../img/ns.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- pri posledni otazce to prida class last-question-container -->
+      <div id="last-answer" class="answer-container">
+        <div class="choice-container">
+          <p class="choice-text choice-text-ano" data-number="1">Yes</p>
+        </div>
+        <div class="choice-container choice-container-red">
+          <p class="choice-text choice-text-ne" data-number="2">No</p>
+        </div>
+        <div class="choice-container hidden">
+          <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container hidden">
+          <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+      </div>
+      </div>
+
+
+      <div id="endGameId" class="justify-center flex-column outcome hidden2 ">
+        <div class="partiesId">
+          <div class="youSupport">In the elections, you would support:</div>
+          <div class="howItEnded">How the elections actually turned out?</div>
+        </div>
+        <div class="parties-container backgroundImage">
+          <div class="parties-text current" data-number="1">Party 1</div>
+          <div class="parties-text" data-number="2">Party 2</div>
+          <div class="parties-text" data-number="3">Party 3</div>
+          <div class="parties-text" data-number="4">Party 4</div>
+        </div>
+        <div class="history-text-div">
+          <div class="history-text-text">
+          <p>7,099,411 voters took part in the elections in Czechoslovakia.</p> 
+          <br>
+          <p>The Communist Party of Czechoslovakia was defeated in Slovakia, but in the whole country it was victorious. In total, it won 43.3% of the vote.</p>
+          <br>
+          <p>Land redistribution, a positive perception of the Soviet Union, and resulting expectations of a new, more socially just system, played a major role. </p>
+          <br>
+          <p>The National Socialists finished second with 25.2% of the vote. They were <br>the opposite of the Communists, but their programme probably failed to resonate in rural areas.</p>
+          <br>
+          <p>The People’s Party hoped for a higher number of voters in rural areas, but it had <br>to make do with only 16.3% of the vote. This was the beginning of the party’s internal problems.</p>             
+          <br>
+          <p>Social Democrats got only 15% of the vote despite having a very similar programme <br>to the Communists.</p>             
+          <br>
+          <p>The 1946 elections were the last free democratic elections in the next forty years.</p>             
+          </div>
+        </div>
+        <div class="party-characteristics">
+          <div class="changingTextParties">
+            Tady bude charakteristika jednotlivych stran
+          </div>
+          </div>
+          <div class="lastResetButtonDiv"></div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay" class="hidden11"></div>    
+    <div id="overlay2" class="hideOverlay2"></div>    
+
+    <div class="timeoutSign hideTimeoutSign">
+      <div class="timeoutSign-content">
+        <div class="timeoutSign-content-text">Do you want to continue?</div>
+        <div class="timer">10</div>
+      </div>
+      <div class="continue"></div>
+      <div class="restartDiv"></div>
+    </div>
+
+    <script src="./game1.js"></script>
+    <!-- <script type="text/javascript">
+      resetButton.classList.add("hidden2");
+      </script> -->
+  </body>
+</html>
