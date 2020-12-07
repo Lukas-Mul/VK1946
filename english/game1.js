@@ -586,25 +586,25 @@ function hideButton3(){
       text:
         "SOCIAL DEMOCRATS",
       cislo: 2,
-      strana: Math.floor((cssd / 9) * 100),
+      strana: Math.floor((cssd / 11) * 100),
   },
   {
       text:
         "NATIONAL SOCIALISTS",
       cislo: 3,
-      strana: Math.floor((ns / 9) * 100),
+      strana: Math.floor((ns / 11) * 100),
   },
   {
       text:
         "PEOPLE'S PARTY",
       cislo: 4,
-      strana: Math.floor((csl / 9) * 100),
+      strana: Math.floor((csl / 11) * 100),
   },
   {
       text:
         "KSČ",
       cislo: 5,
-      strana: Math.floor((ksc / 9) * 100),
+      strana: Math.floor((ksc / 11) * 100),
     },
   ];
 
